@@ -8,45 +8,44 @@ const browserSync = require('browser-sync').create()
 
 //scss to css
 function style() {
-	return gulp
-		.src('assets/scss/**/*.scss', { sourcemaps: true })
-		.pipe(
-			sass({
-				outputStyle: 'compressed',
-			}).on('error', sass.logError)
-		)
-		.pipe(autoprefixer('last 2 versions'))
-		.pipe(gulp.dest('assets/css', { sourcemaps: '.' }))
-		.pipe(browserSync.reload({ stream: true }))
+  return gulp
+    .src('assets/scss/**/*.scss', { sourcemaps: true })
+    .pipe(
+      sass({
+        outputStyle: 'compressed',
+      }).on('error', sass.logError),
+    )
+    .pipe(autoprefixer('last 2 versions'))
+    .pipe(gulp.dest('assets/css', { sourcemaps: '.' }))
+    .pipe(browserSync.reload({ stream: true }))
 }
 
 // pug to html
 function html() {
-	return gulp
-		.src('assets/pug/pages/starter-kit/*.pug')
-		.pipe(
-			pug({
-				pretty: true,
-			})
-		)
-		.on('error', console.error.bind(console))
-		.pipe(gulp.dest('starter-kit'))
-		.pipe(
-			browserSync.reload({
-				stream: true,
-			})
-		)
+  return gulp
+    .src('assets/pug/pages/starter-kit/*.pug')
+    .pipe(
+      pug({
+        pretty: true,
+      }),
+    )
+    .on('error', console.error.bind(console))
+    .pipe(gulp.dest('starter-kit'))
+    .pipe(
+      browserSync.reload({
+        stream: true,
+      }),
+    )
 }
 
 // Watch function
 function watch() {
-	browserSync.init({
-		proxy: 'http://localhost/fms-prototype/src/',
-	})
-	gulp.watch('assets/scss/**/*.scss', style)
-	gulp.watch('assets/pug/pages/theme/*.pug', html)
-	gulp.watch('./src/*.html').on('change', browserSync.reload)
-	gulp.watch('assets/css/*.css').on('change', browserSync.reload)
+  browserSync.init({
+    proxy: 'http://localhost/fms-prototype/src/',
+  })
+  gulp.watch('assets/scss/**/*.scss', style)
+  gulp.watch('./src/**').on('change', browserSync.reload)
+  gulp.watch('assets/css/*.css').on('change', browserSync.reload)
 }
 
 exports.style = style
