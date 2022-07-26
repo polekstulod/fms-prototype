@@ -1,0 +1,9 @@
+.daterangepicker {
+  position: absolute;
+  z-index: 2000 !important;
+}
+
+.select2-dropdown {
+  position: absolute;
+  z-index: 2000 !important;
+}
