@@ -60,6 +60,10 @@
       rel="stylesheet"
       type="text/css"
       href="../assets/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/css/vendors/sweetalert2.css" />
   </head>
   <body>
     <!-- login page start-->
@@ -93,9 +97,10 @@
                     <label class="col-form-label">Email Address</label>
                     <input
                       class="form-control"
+                      id="email"
                       type="email"
                       required=""
-                      placeholder="Test@gmail.com" />
+                      placeholder="email@pupqc.com" />
                   </div>
                   <div class="form-group">
                     <label class="col-form-label">Password</label>
@@ -118,6 +123,7 @@
                     </div>
                     <button
                       class="btn btn-primary btn-block w-100"
+                      id="signin"
                       type="submit">
                       Sign in
                     </button>
@@ -149,6 +155,26 @@
       <script src="../assets/js/script.js"></script>
       <!-- login js-->
       <!-- Plugin used-->
+      <script src="../assets/js/sweet-alert/sweetalert.min.js"></script>
+      <script>
+        const email = document.getElementById('email')
+        const signin = document.getElementById('signin')
+
+        signin.addEventListener('click', () => {
+          if (email.value === 'admin@pupqc.com')
+            window.location.href = './admin/dashboard.html'
+          else if (email.value === 'acadhead@pupqc.com')
+            window.location.href = './academic-head/dashboard.html'
+          else if (email.value === 'faculty@pupqc.com')
+            window.location.href = './faculty/dashboard.html'
+          else
+            swal(
+              'Incorrect Email or Password!',
+              'Please try again later!',
+              'error',
+            )
+        })
+      </script>
     </div>
   </body>
 </html>
