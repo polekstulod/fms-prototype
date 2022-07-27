@@ -4,10 +4,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="../assets/prototype/PUPQCLogo.png"
+      type="image/x-icon" />
     <link
       rel="shortcut icon"
-      href="../assets/images/favicon.png"
+      href="../assets/prototype/PUPQCLogo.png"
       type="image/x-icon" />
     <title>Faculty Management System</title>
     <!-- Google font-->
@@ -69,23 +72,23 @@
     <!-- login page start-->
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xl-5">
+        <div class="col-xl-8">
           <img
             class="bg-img-cover bg-center"
-            src="../assets/images/login/3.jpg"
+            src="../assets/prototype/PUPQC.jpg"
             alt="looginpage" />
         </div>
-        <div class="col-xl-7 p-0">
+        <div class="col-xl-4 p-0">
           <div class="login-card">
             <div>
               <div>
-                <a class="logo text-start" href="index.html"
+                <a class="logo text-center" href="index.html"
                   ><img
                     class="img-fluid for-light"
-                    src="../assets/images/logo/login.png"
+                    src="../assets/prototype/FMSLogo.png"
                     alt="looginpage" /><img
                     class="img-fluid for-dark"
-                    src="../assets/images/logo/logo_dark.png"
+                    src="../assets/prototype/FMSLogo.png"
                     alt="looginpage"
                 /></a>
               </div>
@@ -96,7 +99,7 @@
                   <div class="form-group">
                     <label class="col-form-label">Email Address</label>
                     <input
-                      class="form-control"
+                      class="form-control bg-light-danger"
                       id="email"
                       type="email"
                       required=""
@@ -106,12 +109,14 @@
                     <label class="col-form-label">Password</label>
                     <div class="form-input position-relative">
                       <input
-                        class="form-control"
+                        class="form-control bg-light-danger"
                         type="password"
                         name="login[password]"
                         required=""
                         placeholder="*********" />
-                      <div class="show-hide"><span class="show"> </span></div>
+                      <div class="show-hide">
+                        <span class="show text-danger"> </span>
+                      </div>
                     </div>
                   </div>
                   <div class="form-group mb-0">
@@ -122,14 +127,16 @@
                       >
                     </div>
                     <button
-                      class="btn btn-primary btn-block w-100"
+                      class="btn btn-danger btn-block w-100"
                       id="signin"
                       type="submit">
                       Sign in
                     </button>
                   </div>
                   <p class="mt-4 mb-0 text-center">
-                    Forgot Password?<a class="ms-2" href="sign-up.html"
+                    Forgot Password?<a
+                      class="ms-2 text-danger"
+                      href="sign-up.html"
                       >Click Here</a
                     >
                   </p>
