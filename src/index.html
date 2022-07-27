@@ -160,7 +160,8 @@
         const email = document.getElementById('email')
         const signin = document.getElementById('signin')
 
-        signin.addEventListener('click', () => {
+        signin.addEventListener('click', (e) => {
+          e.preventDefault()
           if (email.value === 'admin@pupqc.com')
             window.location.href = './admin/dashboard.html'
           else if (email.value === 'acadhead@pupqc.com')
@@ -168,11 +169,7 @@
           else if (email.value === 'faculty@pupqc.com')
             window.location.href = './faculty/dashboard.html'
           else
-            swal(
-              'Incorrect Email or Password!',
-              'Please try again later!',
-              'error',
-            )
+            swal('Incorrect Email or Password!', 'Please try again!', 'error')
         })
       </script>
     </div>
