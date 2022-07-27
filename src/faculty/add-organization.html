@@ -68,6 +68,10 @@
       rel="stylesheet"
       type="text/css"
       href="../../assets/css/vendors/dropzone.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/vendors/select2.css" />
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
     <link
@@ -529,15 +533,15 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-6">
-                  <h3>Project Create</h3>
+                  <h3>Add Organization</h3>
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
                       <a href="index.html"> <i data-feather="home"></i></a>
                     </li>
-                    <li class="breadcrumb-item">Apps</li>
-                    <li class="breadcrumb-item active">Project Create</li>
+                    <li class="breadcrumb-item">Organizations</li>
+                    <li class="breadcrumb-item active">Add Organization</li>
                   </ol>
                 </div>
               </div>
@@ -553,101 +557,120 @@
                       <div class="row">
                         <div class="col">
                           <div class="mb-3">
-                            <label>Project Title</label>
-                            <input
-                              class="form-control"
-                              type="text"
-                              placeholder="Project name *" />
+                            <div class="col-form-label">Department</div>
+                            <select class="js-example-basic-single col-sm-12">
+                              <option value="1">PUP QC</option>
+                            </select>
                           </div>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col">
                           <div class="mb-3">
-                            <label>Client name</label>
+                            <label>Name of the Employee</label>
                             <input
                               class="form-control"
                               type="text"
-                              placeholder="Name client or company name" />
+                              placeholder="Name of the Employee"
+                              value="Cecogo, Nieva M"
+                              disabled />
                           </div>
                         </div>
                       </div>
                       <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-sm-12">
                           <div class="mb-3">
-                            <label>Project Rate</label>
+                            <label>Name of the Organization</label>
                             <input
                               class="form-control"
                               type="text"
-                              placeholder="Enter project Rate" />
+                              placeholder="Enter Award of distinction" />
                           </div>
                         </div>
                         <div class="col-sm-4">
                           <div class="mb-3">
-                            <label>Project Type</label>
-                            <select class="form-select">
-                              <option>Hourly</option>
-                              <option>Fix price</option>
+                            <div class="col-form-label">Classification</div>
+                            <select class="js-example-basic-single col-sm-12">
+                              <option value="" disabled selected>
+                                Select Classification
+                              </option>
+                              <option value="1">Learned</option>
+                              <option value="2">Honor</option>
+                              <option value="3">Scientific</option>
+                              <option value="4">Professional</option>
+                              <option value="5">GAD Related</option>
                             </select>
                           </div>
                         </div>
                         <div class="col-sm-4">
                           <div class="mb-3">
-                            <label>Priority</label>
-                            <select class="form-select">
-                              <option>Low</option>
-                              <option>Medium</option>
-                              <option>High</option>
-                              <option>Urgent</option>
+                            <div class="col-form-label">Position</div>
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Enter Position" />
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="mb-3">
+                            <div class="col-form-label">Level</div>
+                            <select class="js-example-basic-single col-sm-12">
+                              <option value="" disabled selected>
+                                Select Level
+                              </option>
+                              <option value="1">International</option>
+                              <option value="2">National</option>
+                              <option value="3">Regional</option>
+                              <option value="4">
+                                Provincial/City/Municipal
+                              </option>
+                              <option value="5">Local-PUP</option>
                             </select>
                           </div>
                         </div>
                       </div>
                       <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-sm-12">
                           <div class="mb-3">
-                            <label>Project Size</label>
-                            <select class="form-select">
-                              <option>Small</option>
-                              <option>Medium</option>
-                              <option>Big</option>
-                            </select>
+                            <label>Organization Address</label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Enter Address of the Organization" />
                           </div>
                         </div>
-                        <div class="col-sm-4">
+                      </div>
+                      <div class="row">
+                        <h6 class="my-3">Inclusive Date</h6>
+                        <div class="col-sm-6">
                           <div class="mb-3">
-                            <label>Starting date</label>
+                            <label>From</label>
                             <input
                               class="datepicker-here form-control"
                               type="text"
-                              data-language="en" />
+                              data-language="en"
+                              value="07/28/2022" />
                           </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-6">
                           <div class="mb-3">
-                            <label>Ending date</label>
+                            <label>To</label>
                             <input
                               class="datepicker-here form-control"
                               type="text"
-                              data-language="en" />
+                              data-language="en"
+                              value="07/28/2022" />
                           </div>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col">
                           <div class="mb-3">
-                            <label>Enter some Details</label>
-                            <textarea
-                              class="form-control"
-                              id="exampleFormControlTextarea4"
-                              rows="3"></textarea>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <div class="mb-3">
-                            <label>Upload project file</label>
+                            <label>Supporting Documents</label>
+                            <small class="d-block mb-2"
+                              >(MOA/MOU, Certificate of
+                              Recognitions/Appreciations)</small
+                            >
                             <form
                               class="dropzone"
                               id="singleFileUpload"
@@ -655,11 +678,6 @@
                               <div class="dz-message needsclick">
                                 <i class="icon-cloud-up"></i>
                                 <h6>Drop files here or click to upload.</h6>
-                                <span class="note needsclick"
-                                  >(This is just a demo dropzone. Selected files
-                                  are <strong>not</strong> actually
-                                  uploaded.)</span
-                                >
                               </div>
                             </form>
                           </div>
@@ -720,6 +738,9 @@
     <script src="../../assets/js/typeahead/typeahead.custom.js"></script>
     <script src="../../assets/js/typeahead-search/handlebars.js"></script>
     <script src="../../assets/js/typeahead-search/typeahead-custom.js"></script>
+    <script src="../../assets/js/tooltip-init.js"></script>
+    <script src="../../assets/js/select2/select2.full.min.js"></script>
+    <script src="../../assets/js/select2/select2-custom.js"></script>
     <script src="../../assets/js/tooltip-init.js"></script>
     <!-- Plugins JS Ends-->
     <!-- Theme js-->

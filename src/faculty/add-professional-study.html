@@ -68,6 +68,10 @@
       rel="stylesheet"
       type="text/css"
       href="../../assets/css/vendors/dropzone.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/vendors/select2.css" />
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
     <link
@@ -529,15 +533,17 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-6">
-                  <h3>Project Create</h3>
+                  <h3>Add Professional Study</h3>
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
                       <a href="index.html"> <i data-feather="home"></i></a>
                     </li>
-                    <li class="breadcrumb-item">Apps</li>
-                    <li class="breadcrumb-item active">Project Create</li>
+                    <li class="breadcrumb-item">Professional Study</li>
+                    <li class="breadcrumb-item active">
+                      Add Professional Study
+                    </li>
                   </ol>
                 </div>
               </div>
@@ -553,52 +559,64 @@
                       <div class="row">
                         <div class="col">
                           <div class="mb-3">
-                            <label>Project Title</label>
-                            <input
-                              class="form-control"
-                              type="text"
-                              placeholder="Project name *" />
+                            <div class="col-form-label">Department</div>
+                            <select class="js-example-basic-single col-sm-12">
+                              <option value="1">PUP QC</option>
+                            </select>
                           </div>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col">
                           <div class="mb-3">
-                            <label>Client name</label>
+                            <label>Name of the Employee</label>
                             <input
                               class="form-control"
                               type="text"
-                              placeholder="Name client or company name" />
+                              placeholder="Name of the Employee"
+                              value="Cecogo, Nieva M"
+                              disabled />
                           </div>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col-sm-4">
                           <div class="mb-3">
-                            <label>Project Rate</label>
+                            <label>Degree / Program</label>
                             <input
                               class="form-control"
                               type="text"
-                              placeholder="Enter project Rate" />
+                              placeholder="Enter Degree / Program" />
                           </div>
                         </div>
                         <div class="col-sm-4">
                           <div class="mb-3">
-                            <label>Project Type</label>
-                            <select class="form-select">
-                              <option>Hourly</option>
-                              <option>Fix price</option>
-                            </select>
+                            <label>School Name</label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Enter School Name" />
                           </div>
                         </div>
                         <div class="col-sm-4">
                           <div class="mb-3">
-                            <label>Priority</label>
-                            <select class="form-select">
-                              <option>Low</option>
-                              <option>Medium</option>
-                              <option>High</option>
-                              <option>Urgent</option>
+                            <div class="col-form-label">
+                              Program Accreditation Level/ World Ranking/ COE or
+                              COD
+                            </div>
+                            <select class="js-example-basic-single col-sm-12">
+                              <option value="" disabled selected>
+                                Select Ranking
+                              </option>
+                              <option value="1">Level I</option>
+                              <option value="2">Level II</option>
+                              <option value="3">Level III</option>
+                              <option value="4">Level IV</option>
+                              <option value="5">COD</option>
+                              <option value="6">COE</option>
+                              <option value="7">
+                                Top 1000 University Ranking
+                              </option>
                             </select>
                           </div>
                         </div>
@@ -606,48 +624,118 @@
                       <div class="row">
                         <div class="col-sm-4">
                           <div class="mb-3">
-                            <label>Project Size</label>
-                            <select class="form-select">
-                              <option>Small</option>
-                              <option>Medium</option>
-                              <option>Big</option>
+                            <div class="col-form-label">Type of Support</div>
+                            <select class="js-example-basic-single">
+                              <option value="" disabled selected>
+                                Select Type of Support
+                              </option>
+                              <option value="1">Financial Aid</option>
+                              <option value="2">Scholarship</option>
+                              <option value="3">Tuition Fee Discount</option>
+                              <option value="4">Self-Funded</option>
                             </select>
                           </div>
                         </div>
                         <div class="col-sm-4">
                           <div class="mb-3">
-                            <label>Starting date</label>
+                            <label>Name of Sponsor/ Agency/ Organization</label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Enter Name of Sponsor" />
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="mb-3">
+                            <label>Amount</label>
+                            <div class="input-group">
+                              <span class="input-group-text">₱</span>
+                              <input
+                                id="prependedtext"
+                                name="prependedtext"
+                                class="form-control"
+                                placeholder="Enter Amount"
+                                type="number" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <h6 class="my-3">Duration</h6>
+                        <div class="col-sm-6">
+                          <div class="mb-3">
+                            <label>From</label>
                             <input
                               class="datepicker-here form-control"
                               type="text"
-                              data-language="en" />
+                              data-language="en"
+                              value="07/28/2022" />
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="mb-3">
+                            <label>To</label>
+                            <input
+                              class="datepicker-here form-control"
+                              type="text"
+                              data-language="en"
+                              value="07/28/2022" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <div class="mb-3">
+                            <div class="col-form-label">Status</div>
+                            <select class="js-example-basic-single">
+                              <option value="" disabled selected>
+                                Select Status
+                              </option>
+                              <option value="1">
+                                Currently Enrolled (New Student)
+                              </option>
+                              <option value="2">
+                                Currently Enrolled (Old Student)
+                              </option>
+                              <option value="3">Leave of Absence</option>
+                              <option value="4">
+                                Completed Academic Requirement
+                              </option>
+                              <option value="5">
+                                Passed Comprehensive Exam
+                              </option>
+                              <option value="6">
+                                Currently Enrolled for Thesis Writing
+                              </option>
+                              <option value="7">
+                                Currently Enrolled for Dissertation Writing
+                              </option>
+                            </select>
                           </div>
                         </div>
                         <div class="col-sm-4">
                           <div class="mb-3">
-                            <label>Ending date</label>
+                            <label>Number of Units earned</label>
                             <input
-                              class="datepicker-here form-control"
-                              type="text"
-                              data-language="en" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <div class="mb-3">
-                            <label>Enter some Details</label>
-                            <textarea
                               class="form-control"
-                              id="exampleFormControlTextarea4"
-                              rows="3"></textarea>
+                              type="number"
+                              placeholder="Enter Number of Units earned" />
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="mb-3">
+                            <label>Number of units currently enrolled</label>
+                            <input
+                              class="form-control"
+                              type="number"
+                              placeholder="Enter Number of Units currently enrolled" />
                           </div>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col">
                           <div class="mb-3">
-                            <label>Upload project file</label>
+                            <label>Supporting Documents</label>
                             <form
                               class="dropzone"
                               id="singleFileUpload"
@@ -655,11 +743,6 @@
                               <div class="dz-message needsclick">
                                 <i class="icon-cloud-up"></i>
                                 <h6>Drop files here or click to upload.</h6>
-                                <span class="note needsclick"
-                                  >(This is just a demo dropzone. Selected files
-                                  are <strong>not</strong> actually
-                                  uploaded.)</span
-                                >
                               </div>
                             </form>
                           </div>
@@ -720,6 +803,9 @@
     <script src="../../assets/js/typeahead/typeahead.custom.js"></script>
     <script src="../../assets/js/typeahead-search/handlebars.js"></script>
     <script src="../../assets/js/typeahead-search/typeahead-custom.js"></script>
+    <script src="../../assets/js/tooltip-init.js"></script>
+    <script src="../../assets/js/select2/select2.full.min.js"></script>
+    <script src="../../assets/js/select2/select2-custom.js"></script>
     <script src="../../assets/js/tooltip-init.js"></script>
     <!-- Plugins JS Ends-->
     <!-- Theme js-->

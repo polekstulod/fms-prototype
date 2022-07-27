@@ -4,13 +4,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Cuba admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities." />
-    <meta
-      name="keywords"
-      content="admin template, Cuba admin template, dashboard template, flat admin template, responsive admin template, web app" />
-    <meta name="author" content="pixelstrap" />
     <link
       rel="icon"
       href="../../assets/prototype/PUPQCLogo.png"
@@ -59,15 +52,23 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="../../assets/css/vendors/animate.css" />
+      href="../../assets/css/vendors/select2.css" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="../../assets/css/vendors/date-picker.css" />
+      href="../../assets/css/vendors/daterange-picker.css" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="../../assets/css/vendors/dropzone.css" />
+      href="../../assets/css/vendors/prism.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/vendors/datatables.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/vendors/datatable-extension.css" />
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
     <link
@@ -79,13 +80,14 @@
     <link
       id="color"
       rel="stylesheet"
-      href="../assets/css/color-1.css"
+      href="../../assets/css/color-1.css"
       media="screen" />
     <!-- Responsive css-->
     <link
       rel="stylesheet"
       type="text/css"
       href="../../assets/css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/custom.css" />
   </head>
   <body>
     <!-- loader starts-->
@@ -215,15 +217,15 @@
                     src="../../assets/images/dashboard/profile.jpg"
                     alt="" />
                   <div class="media-body">
-                    <span>Micah Villaruz</span>
+                    <span>Elsie Jaradal</span>
                     <p class="mb-0 font-roboto">
-                      Admin <i class="middle fa fa-angle-down"></i>
+                      Faculty <i class="middle fa fa-angle-down"></i>
                     </p>
                   </div>
                 </div>
                 <ul class="profile-dropdown onhover-show-div">
                   <li>
-                    <a href="#"
+                    <a href="profile.html"
                       ><i data-feather="user"></i><span>Account </span></a
                     >
                   </li>
@@ -234,17 +236,7 @@
                   </li>
                   <li>
                     <a href="#"
-                      ><i data-feather="file-text"></i><span>Taskboard</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="#"
                       ><i data-feather="settings"></i><span>Settings</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i data-feather="log-in"> </i><span>Log in</span></a
                     >
                   </li>
                 </ul>
@@ -529,15 +521,14 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-6">
-                  <h3>Project Create</h3>
+                  <h3>Professional Study</h3>
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <a href="index.html"> <i data-feather="home"></i></a>
+                      <a href="dashboard.html"> <i data-feather="home"></i></a>
                     </li>
-                    <li class="breadcrumb-item">Apps</li>
-                    <li class="breadcrumb-item active">Project Create</li>
+                    <li class="breadcrumb-item active">Professional Study</li>
                   </ol>
                 </div>
               </div>
@@ -548,131 +539,116 @@
             <div class="row">
               <div class="col-sm-12">
                 <div class="card">
-                  <div class="card-body">
-                    <div class="form theme-form">
-                      <div class="row">
-                        <div class="col">
-                          <div class="mb-3">
-                            <label>Project Title</label>
-                            <input
-                              class="form-control"
-                              type="text"
-                              placeholder="Project name *" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <div class="mb-3">
-                            <label>Client name</label>
-                            <input
-                              class="form-control"
-                              type="text"
-                              placeholder="Name client or company name" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <div class="mb-3">
-                            <label>Project Rate</label>
-                            <input
-                              class="form-control"
-                              type="text"
-                              placeholder="Enter project Rate" />
-                          </div>
-                        </div>
-                        <div class="col-sm-4">
-                          <div class="mb-3">
-                            <label>Project Type</label>
-                            <select class="form-select">
-                              <option>Hourly</option>
-                              <option>Fix price</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-4">
-                          <div class="mb-3">
-                            <label>Priority</label>
-                            <select class="form-select">
-                              <option>Low</option>
-                              <option>Medium</option>
-                              <option>High</option>
-                              <option>Urgent</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <div class="mb-3">
-                            <label>Project Size</label>
-                            <select class="form-select">
-                              <option>Small</option>
-                              <option>Medium</option>
-                              <option>Big</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-4">
-                          <div class="mb-3">
-                            <label>Starting date</label>
-                            <input
-                              class="datepicker-here form-control"
-                              type="text"
-                              data-language="en" />
-                          </div>
-                        </div>
-                        <div class="col-sm-4">
-                          <div class="mb-3">
-                            <label>Ending date</label>
-                            <input
-                              class="datepicker-here form-control"
-                              type="text"
-                              data-language="en" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <div class="mb-3">
-                            <label>Enter some Details</label>
-                            <textarea
-                              class="form-control"
-                              id="exampleFormControlTextarea4"
-                              rows="3"></textarea>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <div class="mb-3">
-                            <label>Upload project file</label>
-                            <form
-                              class="dropzone"
-                              id="singleFileUpload"
-                              action="/upload.php">
-                              <div class="dz-message needsclick">
-                                <i class="icon-cloud-up"></i>
-                                <h6>Drop files here or click to upload.</h6>
-                                <span class="note needsclick"
-                                  >(This is just a demo dropzone. Selected files
-                                  are <strong>not</strong> actually
-                                  uploaded.)</span
-                                >
+                  <div class="card-header">
+                    <div class="d-flex justify-content-between">
+                      <h5>ONGOING ADVANCED / PROFESSIONAL STUDY</h5>
+                      <div class="d-flex justify-content-between">
+                        <button
+                          class="btn btn-success me-3"
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#tooltipmodal">
+                          <i class="fa fa-filter me-3"></i>
+                          Filters
+                        </button>
+                        <div
+                          class="modal fade"
+                          id="tooltipmodal"
+                          tabindex="-1"
+                          role="dialog"
+                          aria-labelledby="tooltipmodal"
+                          aria-hidden="true">
+                          <div
+                            class="modal-dialog modal-dialog-centered"
+                            role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button
+                                  class="btn-close"
+                                  type="button"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
                               </div>
-                            </form>
+                              <div class="modal-body">
+                                <label>Select Department</label>
+                                <select
+                                  class="js-example-basic-single col-sm-12">
+                                  <option value="1">PUPQC</option>
+                                </select>
+                                <label class="mt-4">Select Date Range</label>
+                                <div class="theme-form">
+                                  <div>
+                                    <input
+                                      class="form-control"
+                                      type="text"
+                                      name="daterange"
+                                      placeholder="Pick a date" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button
+                                  class="btn btn-secondary"
+                                  type="button"
+                                  data-bs-dismiss="modal">
+                                  Close
+                                </button>
+                                <button class="btn btn-primary" type="button">
+                                  Submit
+                                </button>
+                              </div>
+                            </div>
                           </div>
                         </div>
+                        <a
+                          class="btn btn-info"
+                          type="button"
+                          href="add-professional-study.html">
+                          <i class="fa fa-plus me-3"></i>
+                          Add Record
+                        </a>
                       </div>
-                      <div class="row">
-                        <div class="col">
-                          <div class="text-end">
-                            <a class="btn btn-success me-3" href="#">Add</a
-                            ><a class="btn btn-danger" href="#">Cancel</a>
-                          </div>
-                        </div>
-                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="dt-ext table-responsive">
+                      <table class="display export-button">
+                        <thead>
+                          <tr>
+                            <th>Degree / Program</th>
+                            <th>School Name</th>
+                            <th>Type of Support</th>
+                            <th>Amount</th>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              PhD in Educational Leadership and Management
+                              Program Major in Educational Management
+                            </td>
+                            <td>Pacific Intercontinental College</td>
+                            <td>Self-Funded</td>
+                            <td>17,500 per tri-mester</td>
+                            <td>06/25/2022</td>
+                            <td>Present</td>
+                            <td>On going</td>
+                            <td>
+                              <a class="fs-6 me-2">
+                                <i
+                                  class="icofont icofont-eye-alt text-success"></i>
+                              </a>
+                              <a class="fs-6" href="edit-record.html">
+                                <i class="fa fa-pencil text-primary"></i>
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
@@ -710,21 +686,36 @@
     <script src="../../assets/js/config.js"></script>
     <!-- Plugins JS start-->
     <script src="../../assets/js/sidebar-menu.js"></script>
-    <script src="../../assets/js/datepicker/date-picker/datepicker.js"></script>
-    <script src="../../assets/js/datepicker/date-picker/datepicker.en.js"></script>
-    <script src="../../assets/js/datepicker/date-picker/datepicker.custom.js"></script>
-    <script src="../../assets/js/dropzone/dropzone.js"></script>
-    <script src="../../assets/js/dropzone/dropzone-script.js"></script>
-    <script src="../../assets/js/typeahead/handlebars.js"></script>
-    <script src="../../assets/js/typeahead/typeahead.bundle.js"></script>
-    <script src="../../assets/js/typeahead/typeahead.custom.js"></script>
-    <script src="../../assets/js/typeahead-search/handlebars.js"></script>
-    <script src="../../assets/js/typeahead-search/typeahead-custom.js"></script>
+    <script src="../../assets/js/datepicker/daterange-picker/moment.min.js"></script>
+    <script src="../../assets/js/datepicker/daterange-picker/daterangepicker.js"></script>
+    <script src="../../assets/js/datepicker/daterange-picker/daterange-picker.custom.js"></script>
+    <script src="../../assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
+    <script src="../../assets/js/datatable/datatable-extension/dataTables.buttons.min.js"></script>
+    <script src="../../assets/js/datatable/datatable-extension/jszip.min.js"></script>
+    <script src="../../assets/js/datatable/datatable-extension/buttons.colVis.min.js"></script>
+    <script src="../../assets/js/datatable/datatable-extension/pdfmake.min.js"></script>
+    <script src="../../assets/js/datatable/datatable-extension/vfs_fonts.js"></script>
+    <script src="../../assets/js/datatable/datatable-extension/dataTables.autoFill.min.js"></script>
+    <script src="../../assets/js/datatable/datatable-extension/dataTables.select.min.js"></script>
+    <script src="../../assets/js/datatable/datatable-extension/buttons.bootstrap4.min.js"></script>
+    <script src="../../assets/js/datatable/datatable-extension/buttons.html5.min.js"></script>
+    <script src="../../assets/js/datatable/datatable-extension/buttons.print.min.js"></script>
+    <script src="../../assets/js/datatable/datatable-extension/dataTables.bootstrap4.min.js"></script>
+    <script src="../../assets/js/datatable/datatable-extension/dataTables.responsive.min.js"></script>
+    <script src="../../assets/js/datatable/datatable-extension/responsive.bootstrap4.min.js"></script>
+    <script src="../../assets/js/datatable/datatable-extension/dataTables.keyTable.min.js"></script>
+    <script src="../../assets/js/datatable/datatable-extension/dataTables.colReorder.min.js"></script>
+    <script src="../../assets/js/datatable/datatable-extension/dataTables.fixedHeader.min.js"></script>
+    <script src="../../assets/js/datatable/datatable-extension/dataTables.rowReorder.min.js"></script>
+    <script src="../../assets/js/datatable/datatable-extension/dataTables.scroller.min.js"></script>
+    <script src="../../assets/js/datatable/datatable-extension/custom.js"></script>
+    <script src="../../assets/js/tooltip-init.js"></script>
+    <script src="../../assets/js/select2/select2.full.min.js"></script>
+    <script src="../../assets/js/select2/select2-custom.js"></script>
     <script src="../../assets/js/tooltip-init.js"></script>
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
     <script src="../../assets/js/script.js"></script>
-    <script src="../../assets/js/theme-customizer/customizer.js"></script>
     <!-- login js-->
     <!-- Plugin used-->
   </body>
