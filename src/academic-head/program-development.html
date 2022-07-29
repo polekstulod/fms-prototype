@@ -556,7 +556,6 @@
                     <li class="breadcrumb-item">
                       <a href="dashboard.html"> <i data-feather="home"></i></a>
                     </li>
-                    <li class="breadcrumb-item">Program Development</li>
                     <li class="breadcrumb-item active">Program Development</li>
                   </ol>
                 </div>
@@ -571,7 +570,7 @@
                   <div class="card-header">
                     <div class="d-flex justify-content-between">
                       <h5 class="text-uppercase">
-                        Instructional Material, Reference/Text Book, Module,
+                        Instructional Material, Reference / Text Book, Module,
                         Monographs
                       </h5>
                       <button
@@ -597,6 +596,7 @@
                             <th>
                               Description of Supporting Documents Submitted
                             </th>
+                            <th>Status</th>
                             <th>Action</th>
                           </tr>
                         </thead>
@@ -611,7 +611,7 @@
                   <div class="card-header">
                     <div class="d-flex justify-content-between">
                       <h5 class="text-uppercase">
-                        Course Syllabus/ Guide Developed/Revised/Enhanced
+                        Course Syllabus / Guide Developed / Revised / Enhanced
                       </h5>
                       <button
                         class="btn btn-success"
@@ -635,6 +635,7 @@
                             <th>
                               Description of Supporting Documents Submitted
                             </th>
+                            <th>Status</th>
                             <th>Action</th>
                           </tr>
                         </thead>
@@ -646,13 +647,25 @@
                             <td>Syllabus Enhancer</td>
                             <td>Google Drive Link</td>
                             <td>
-                              <button
-                                class="btn btn-secondary btn-xs"
-                                type="button"
-                                data-original-title="btn btn-secondary btn-xs"
-                                title="">
-                                View
-                              </button>
+                              <span
+                                class="badge rounded-pill badge-warning text-dark"
+                                >Pending</span
+                              >
+                            </td>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <a class="fs-6" href="view-achievements.html">
+                                  <i
+                                    class="icofont icofont-eye-alt text-success"></i>
+                                </a>
+                                <button
+                                  class="fs-6 btn"
+                                  type="button"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#achievementsModal">
+                                  <i class="fa fa-pencil text-primary"></i>
+                                </button>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -662,13 +675,24 @@
                             <td>Syllabus Enhancer</td>
                             <td>Google Drive Link</td>
                             <td>
-                              <button
-                                class="btn btn-secondary btn-xs"
-                                type="button"
-                                data-original-title="btn btn-secondary btn-xs"
-                                title="">
-                                View
-                              </button>
+                              <span class="badge rounded-pill badge-success"
+                                >Approved</span
+                              >
+                            </td>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <a class="fs-6" href="view-achievements.html">
+                                  <i
+                                    class="icofont icofont-eye-alt text-success"></i>
+                                </a>
+                                <button
+                                  class="fs-6 btn"
+                                  type="button"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#achievementsModal">
+                                  <i class="fa fa-pencil text-primary"></i>
+                                </button>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -678,13 +702,24 @@
                             <td>Syllabus Enhancer</td>
                             <td>Google Drive Link</td>
                             <td>
-                              <button
-                                class="btn btn-secondary btn-xs"
-                                type="button"
-                                data-original-title="btn btn-secondary btn-xs"
-                                title="">
-                                View
-                              </button>
+                              <span class="badge rounded-pill badge-info"
+                                >For Revision</span
+                              >
+                            </td>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <a class="fs-6" href="view-achievements.html">
+                                  <i
+                                    class="icofont icofont-eye-alt text-success"></i>
+                                </a>
+                                <button
+                                  class="fs-6 btn"
+                                  type="button"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#achievementsModal">
+                                  <i class="fa fa-pencil text-primary"></i>
+                                </button>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -694,13 +729,24 @@
                             <td>Syllabus Enhancer</td>
                             <td>Google Drive Link</td>
                             <td>
-                              <button
-                                class="btn btn-secondary btn-xs"
-                                type="button"
-                                data-original-title="btn btn-secondary btn-xs"
-                                title="">
-                                View
-                              </button>
+                              <span class="badge rounded-pill badge-danger"
+                                >Declined</span
+                              >
+                            </td>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <a class="fs-6" href="view-achievements.html">
+                                  <i
+                                    class="icofont icofont-eye-alt text-success"></i>
+                                </a>
+                                <button
+                                  class="fs-6 btn"
+                                  type="button"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#achievementsModal">
+                                  <i class="fa fa-pencil text-primary"></i>
+                                </button>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -713,18 +759,75 @@
                               2021-2022
                             </td>
                             <td>
-                              <button
-                                class="btn btn-secondary btn-xs"
-                                type="button"
-                                data-original-title="btn btn-secondary btn-xs"
-                                title="">
-                                View
-                              </button>
+                              <span
+                                class="badge rounded-pill badge-warning text-dark"
+                                >Pending</span
+                              >
+                            </td>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <a class="fs-6" href="view-achievements.html">
+                                  <i
+                                    class="icofont icofont-eye-alt text-success"></i>
+                                </a>
+                                <button
+                                  class="fs-6 btn"
+                                  type="button"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#achievementsModal">
+                                  <i class="fa fa-pencil text-primary"></i>
+                                </button>
+                              </div>
                             </td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="achievementsModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="achievementsModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel2">
+                      Update Status
+                    </h5>
+                    <button
+                      class="btn-close"
+                      type="button"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label>Status</label>
+                        <select class="form-select col-sm-12">
+                          <option value="1">Approved</option>
+                          <option value="2">Declined</option>
+                          <option value="3">For Revision</option>
+                        </select>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      class="btn btn-secondary"
+                      type="button"
+                      data-bs-dismiss="modal">
+                      Close
+                    </button>
+                    <button class="btn btn-primary" type="button">
+                      Submit
+                    </button>
                   </div>
                 </div>
               </div>

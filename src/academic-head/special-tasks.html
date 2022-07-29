@@ -556,7 +556,6 @@
                     <li class="breadcrumb-item">
                       <a href="dashboard.html"> <i data-feather="home"></i></a>
                     </li>
-                    <li class="breadcrumb-item">Special Tasks</li>
                     <li class="breadcrumb-item active">Special Tasks</li>
                   </ol>
                 </div>
@@ -588,11 +587,13 @@
                           <tr>
                             <th>Name of the Employee</th>
                             <th>Final Output</th>
-                            <th>Status</th>
-                            <th>Remarks</th>
+                            <th>Target Date</th>
+                            <th>Actual Date</th>
+                            <th>Description of Accomplishment</th>
                             <th>
                               Description of Supporting Documents Submitted
                             </th>
+                            <th>Status</th>
                             <th>Action</th>
                           </tr>
                         </thead>
@@ -601,35 +602,28 @@
                             <td>Cruz, Mary Grace</td>
                             <td>Submission of COPC for BSIT Compliance</td>
                             <td></td>
-                            <td></td>
+                            <td>06/17/2022</td>
+                            <td>Received by QAC and CHED</td>
                             <td>Photos of Submission</td>
                             <td>
-                              <button
-                                class="btn btn-secondary btn-xs"
-                                type="button"
-                                data-original-title="btn btn-secondary btn-xs"
-                                title="">
-                                View
-                              </button>
+                              <span class="badge rounded-pill badge-success"
+                                >Approved</span
+                              >
                             </td>
-                          </tr>
-                          <tr>
-                            <td>Cruz, Mary Grace</td>
                             <td>
-                              2nd Coordination Meeting for Accre Local Task
-                              Force
-                            </td>
-                            <td></td>
-                            <td></td>
-                            <td>Photos of attendance</td>
-                            <td>
-                              <button
-                                class="btn btn-secondary btn-xs"
-                                type="button"
-                                data-original-title="btn btn-secondary btn-xs"
-                                title="">
-                                View
-                              </button>
+                              <div class="d-flex align-items-center">
+                                <a class="fs-6" href="view-achievements.html">
+                                  <i
+                                    class="icofont icofont-eye-alt text-success"></i>
+                                </a>
+                                <button
+                                  class="fs-6 btn"
+                                  type="button"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#achievementsModal">
+                                  <i class="fa fa-pencil text-primary"></i>
+                                </button>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -639,34 +633,170 @@
                               HE/ICT, BSBA HR/MM, BS Entrep
                             </td>
                             <td></td>
+                            <td>06/17/2022</td>
                             <td></td>
                             <td></td>
                             <td>
-                              <button
-                                class="btn btn-secondary btn-xs"
-                                type="button"
-                                data-original-title="btn btn-secondary btn-xs"
-                                title="">
-                                View
-                              </button>
+                              <span class="badge rounded-pill badge-danger"
+                                >Declined</span
+                              >
+                            </td>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <a class="fs-6" href="view-achievements.html">
+                                  <i
+                                    class="icofont icofont-eye-alt text-success"></i>
+                                </a>
+                                <button
+                                  class="fs-6 btn"
+                                  type="button"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#achievementsModal">
+                                  <i class="fa fa-pencil text-primary"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Cruz, Mary Grace</td>
+                            <td>
+                              2nd Coordination Meeting for Accre Local Task
+                              Force
+                            </td>
+                            <td></td>
+                            <td>04/26/2022</td>
+                            <td>Accomplished</td>
+                            <td>Photos of Attendance</td>
+                            <td>
+                              <span class="badge rounded-pill badge-success"
+                                >Approved</span
+                              >
+                            </td>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <a class="fs-6" href="view-achievements.html">
+                                  <i
+                                    class="icofont icofont-eye-alt text-success"></i>
+                                </a>
+                                <button
+                                  class="fs-6 btn"
+                                  type="button"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#achievementsModal">
+                                  <i class="fa fa-pencil text-primary"></i>
+                                </button>
+                              </div>
                             </td>
                           </tr>
                           <tr>
                             <td>Monzon, Demelyn E.</td>
-                            <td>PUP-CHED SMART Campus Project.</td>
+                            <td>PUP-CHED SMART Campus Project</td>
+                            <td></td>
+                            <td>01/03/2022</td>
+                            <td>Technical Working Group</td>
+                            <td></td>
+                            <td>
+                              <span
+                                class="badge rounded-pill badge-warning text-dark"
+                                >Pending</span
+                              >
+                            </td>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <a class="fs-6" href="view-achievements.html">
+                                  <i
+                                    class="icofont icofont-eye-alt text-success"></i>
+                                </a>
+                                <button
+                                  class="fs-6 btn"
+                                  type="button"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#achievementsModal">
+                                  <i class="fa fa-pencil text-primary"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Monzon, Demelyn E.</td>
+                            <td>
+                              ICT Courseware Utilization, a component part of
+                              the PUP-CHED SMART Campus Project
+                            </td>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
                             <td>
-                              <button
-                                class="btn btn-secondary btn-xs"
-                                type="button"
-                                data-original-title="btn btn-secondary btn-xs"
-                                title="">
-                                View
-                              </button>
+                              <span class="badge rounded-pill badge-info"
+                                >For Revision</span
+                              >
+                            </td>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <a class="fs-6" href="view-achievements.html">
+                                  <i
+                                    class="icofont icofont-eye-alt text-success"></i>
+                                </a>
+                                <button
+                                  class="fs-6 btn"
+                                  type="button"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#achievementsModal">
+                                  <i class="fa fa-pencil text-primary"></i>
+                                </button>
+                              </div>
                             </td>
                           </tr>
+                          <div
+                            class="modal fade"
+                            id="achievementsModal"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="achievementsModalLabel"
+                            aria-hidden="true">
+                            <div
+                              class="modal-dialog modal-dialog-centered"
+                              role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5
+                                    class="modal-title"
+                                    id="exampleModalLabel2">
+                                    Update Status
+                                  </h5>
+                                  <button
+                                    class="btn-close"
+                                    type="button"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <form>
+                                    <div class="mb-3">
+                                      <label>Status</label>
+                                      <select class="form-select col-sm-12">
+                                        <option value="1">Approved</option>
+                                        <option value="2">Declined</option>
+                                        <option value="3">For Revision</option>
+                                      </select>
+                                    </div>
+                                  </form>
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    class="btn btn-secondary"
+                                    type="button"
+                                    data-bs-dismiss="modal">
+                                    Close
+                                  </button>
+                                  <button class="btn btn-primary" type="button">
+                                    Submit
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </tbody>
                       </table>
                     </div>
