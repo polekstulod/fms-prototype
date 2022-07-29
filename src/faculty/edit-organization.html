@@ -4,6 +4,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cuba admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities." />
+    <meta
+      name="keywords"
+      content="admin template, Cuba admin template, dashboard template, flat admin template, responsive admin template, web app" />
+    <meta name="author" content="pixelstrap" />
     <link
       rel="icon"
       href="../../assets/prototype/PUPQCLogo.png"
@@ -52,23 +59,19 @@
     <link
       rel="stylesheet"
       type="text/css"
+      href="../../assets/css/vendors/animate.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/vendors/date-picker.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/vendors/dropzone.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
       href="../../assets/css/vendors/select2.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../../assets/css/vendors/daterange-picker.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../../assets/css/vendors/prism.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../../assets/css/vendors/datatables.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../../assets/css/vendors/datatable-extension.css" />
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
     <link
@@ -80,14 +83,13 @@
     <link
       id="color"
       rel="stylesheet"
-      href="../../assets/css/color-1.css"
+      href="../assets/css/color-1.css"
       media="screen" />
     <!-- Responsive css-->
     <link
       rel="stylesheet"
       type="text/css"
       href="../../assets/css/responsive.css" />
-    <link rel="stylesheet" type="text/css" href="../../assets/css/custom.css" />
   </head>
   <body>
     <!-- loader starts-->
@@ -217,15 +219,15 @@
                     src="../../assets/images/dashboard/profile.jpg"
                     alt="" />
                   <div class="media-body">
-                    <span>Elsie Jaradal</span>
+                    <span>Micah Villaruz</span>
                     <p class="mb-0 font-roboto">
-                      Faculty <i class="middle fa fa-angle-down"></i>
+                      Admin <i class="middle fa fa-angle-down"></i>
                     </p>
                   </div>
                 </div>
                 <ul class="profile-dropdown onhover-show-div">
                   <li>
-                    <a href="profile.html"
+                    <a href="#"
                       ><i data-feather="user"></i><span>Account </span></a
                     >
                   </li>
@@ -236,7 +238,17 @@
                   </li>
                   <li>
                     <a href="#"
+                      ><i data-feather="file-text"></i><span>Taskboard</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
                       ><i data-feather="settings"></i><span>Settings</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i data-feather="log-in"> </i><span>Log in</span></a
                     >
                   </li>
                 </ul>
@@ -521,14 +533,15 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-6">
-                  <h3>Organizations</h3>
+                  <h3>Edit Organization</h3>
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <a href="dashboard.html"> <i data-feather="home"></i></a>
+                      <a href="index.html"> <i data-feather="home"></i></a>
                     </li>
-                    <li class="breadcrumb-item active">Organizations</li>
+                    <li class="breadcrumb-item">Organizations</li>
+                    <li class="breadcrumb-item active">Add Organization</li>
                   </ol>
                 </div>
               </div>
@@ -539,109 +552,144 @@
             <div class="row">
               <div class="col-sm-12">
                 <div class="card">
-                  <div class="card-header">
-                    <div class="d-flex justify-content-between">
-                      <h5>
-                        OFFICERSHIP/ MEMBERSHIP IN PROFESSIONAL ORGANIZATION/S
-                      </h5>
-                      <div class="d-flex justify-content-between">
-                        <button
-                          class="btn btn-success me-3"
-                          type="button"
-                          data-bs-toggle="modal"
-                          data-bs-target="#tooltipmodal">
-                          <i class="fa fa-filter me-3"></i>
-                          Filters
-                        </button>
-                        <div
-                          class="modal fade"
-                          id="tooltipmodal"
-                          tabindex="-1"
-                          role="dialog"
-                          aria-labelledby="tooltipmodal"
-                          aria-hidden="true">
-                          <div
-                            class="modal-dialog modal-dialog-centered"
-                            role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button
-                                  class="btn-close"
-                                  type="button"
-                                  data-bs-dismiss="modal"
-                                  aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                <label>Select Department</label>
-                                <select
-                                  class="js-example-basic-single col-sm-12">
-                                  <option value="1">PUPQC</option>
-                                </select>
-                                <label class="mt-4">Select Date Range</label>
-                                <div class="theme-form">
-                                  <div>
-                                    <input
-                                      class="form-control"
-                                      type="text"
-                                      name="daterange"
-                                      placeholder="Pick a date" />
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="modal-footer">
-                                <button
-                                  class="btn btn-secondary"
-                                  type="button"
-                                  data-bs-dismiss="modal">
-                                  Close
-                                </button>
-                                <button class="btn btn-primary" type="button">
-                                  Submit
-                                </button>
-                              </div>
-                            </div>
+                  <div class="card-body">
+                    <div class="form theme-form">
+                      <div class="row">
+                        <div class="col">
+                          <div class="mb-3">
+                            <div class="col-form-label">Department</div>
+                            <select class="js-example-basic-single col-sm-12">
+                              <option value="1">PUP QC</option>
+                            </select>
                           </div>
                         </div>
-                        <a
-                          class="btn btn-info"
-                          type="button"
-                          href="add-organization.html">
-                          <i class="fa fa-plus me-3"></i>
-                          Add Record
-                        </a>
                       </div>
-                    </div>
-                  </div>
-                  <div class="card-body">
-                    <div class="dt-ext table-responsive">
-                      <table class="display export-button">
-                        <thead>
-                          <tr>
-                            <th>Organization</th>
-                            <th>Classification</th>
-                            <th>Position</th>
-                            <th>Level</th>
-                            <th>Action</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Gatan, Doris B.</td>
-                            <td>PSUCCESS</td>
-                            <td>VP for NCR</td>
-                            <td>National</td>
-                            <td>
-                              <a class="fs-6 me-2">
-                                <i
-                                  class="icofont icofont-eye-alt text-success"></i>
-                              </a>
-                              <a class="fs-6" href="edit-organization.html">
-                                <i class="fa fa-pencil text-primary"></i>
-                              </a>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                      <div class="row">
+                        <div class="col">
+                          <div class="mb-3">
+                            <label>Name of the Employee</label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              value="Gatan, Doris B."
+                              disabled />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="mb-3">
+                            <label>Name of the Organization</label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              value="PSUCCESS" />
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="mb-3">
+                            <div class="col-form-label">Classification</div>
+                            <select class="js-example-basic-single col-sm-12">
+                              <option value="" disabled selected>
+                                Select Classification
+                              </option>
+                              <option value="1">Learned</option>
+                              <option value="2">Honor</option>
+                              <option value="3">Scientific</option>
+                              <option value="4" selected>Professional</option>
+                              <option value="5">GAD Related</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="mb-3">
+                            <div class="col-form-label">Position</div>
+                            <input
+                              class="form-control"
+                              type="text"
+                              value="VP for NCR" />
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="mb-3">
+                            <div class="col-form-label">Level</div>
+                            <select class="js-example-basic-single col-sm-12">
+                              <option value="" disabled selected>
+                                Select Level
+                              </option>
+                              <option value="1">International</option>
+                              <option value="2" selected>National</option>
+                              <option value="3">Regional</option>
+                              <option value="4">
+                                Provincial/City/Municipal
+                              </option>
+                              <option value="5">Local-PUP</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="mb-3">
+                            <label>Organization Address</label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              value="Unit 909 The One Executive Office Bldg., No, 5 West Avenue, Quezon City" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <h6 class="my-3">Inclusive Date</h6>
+                        <div class="col-sm-6">
+                          <div class="mb-3">
+                            <label>From</label>
+                            <input
+                              class="datepicker-here form-control"
+                              type="text"
+                              data-language="en"
+                              value="06/05/2022" />
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="mb-3">
+                            <label>To</label>
+                            <input
+                              class="datepicker-here form-control"
+                              type="text"
+                              data-language="en"
+                              value="Present" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div class="mb-3">
+                            <label>Supporting Documents</label>
+                            <small class="d-block mb-2"
+                              >(MOA/MOU, Certificate of
+                              Recognitions/Appreciations)</small
+                            >
+                            <form
+                              class="dropzone"
+                              id="singleFileUpload"
+                              action="/upload.php">
+                              <div class="dz-message needsclick">
+                                <i class="icon-cloud-up"></i>
+                                <h6>Drop files here or click to upload.</h6>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div class="text-end">
+                            <a class="btn btn-success me-3" href="#">Add</a
+                            ><a class="btn btn-danger" href="#">Cancel</a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -679,29 +727,16 @@
     <script src="../../assets/js/config.js"></script>
     <!-- Plugins JS start-->
     <script src="../../assets/js/sidebar-menu.js"></script>
-    <script src="../../assets/js/datepicker/daterange-picker/moment.min.js"></script>
-    <script src="../../assets/js/datepicker/daterange-picker/daterangepicker.js"></script>
-    <script src="../../assets/js/datepicker/daterange-picker/daterange-picker.custom.js"></script>
-    <script src="../../assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
-    <script src="../../assets/js/datatable/datatable-extension/dataTables.buttons.min.js"></script>
-    <script src="../../assets/js/datatable/datatable-extension/jszip.min.js"></script>
-    <script src="../../assets/js/datatable/datatable-extension/buttons.colVis.min.js"></script>
-    <script src="../../assets/js/datatable/datatable-extension/pdfmake.min.js"></script>
-    <script src="../../assets/js/datatable/datatable-extension/vfs_fonts.js"></script>
-    <script src="../../assets/js/datatable/datatable-extension/dataTables.autoFill.min.js"></script>
-    <script src="../../assets/js/datatable/datatable-extension/dataTables.select.min.js"></script>
-    <script src="../../assets/js/datatable/datatable-extension/buttons.bootstrap4.min.js"></script>
-    <script src="../../assets/js/datatable/datatable-extension/buttons.html5.min.js"></script>
-    <script src="../../assets/js/datatable/datatable-extension/buttons.print.min.js"></script>
-    <script src="../../assets/js/datatable/datatable-extension/dataTables.bootstrap4.min.js"></script>
-    <script src="../../assets/js/datatable/datatable-extension/dataTables.responsive.min.js"></script>
-    <script src="../../assets/js/datatable/datatable-extension/responsive.bootstrap4.min.js"></script>
-    <script src="../../assets/js/datatable/datatable-extension/dataTables.keyTable.min.js"></script>
-    <script src="../../assets/js/datatable/datatable-extension/dataTables.colReorder.min.js"></script>
-    <script src="../../assets/js/datatable/datatable-extension/dataTables.fixedHeader.min.js"></script>
-    <script src="../../assets/js/datatable/datatable-extension/dataTables.rowReorder.min.js"></script>
-    <script src="../../assets/js/datatable/datatable-extension/dataTables.scroller.min.js"></script>
-    <script src="../../assets/js/datatable/datatable-extension/custom.js"></script>
+    <script src="../../assets/js/datepicker/date-picker/datepicker.js"></script>
+    <script src="../../assets/js/datepicker/date-picker/datepicker.en.js"></script>
+    <script src="../../assets/js/datepicker/date-picker/datepicker.custom.js"></script>
+    <script src="../../assets/js/dropzone/dropzone.js"></script>
+    <script src="../../assets/js/dropzone/dropzone-script.js"></script>
+    <script src="../../assets/js/typeahead/handlebars.js"></script>
+    <script src="../../assets/js/typeahead/typeahead.bundle.js"></script>
+    <script src="../../assets/js/typeahead/typeahead.custom.js"></script>
+    <script src="../../assets/js/typeahead-search/handlebars.js"></script>
+    <script src="../../assets/js/typeahead-search/typeahead-custom.js"></script>
     <script src="../../assets/js/tooltip-init.js"></script>
     <script src="../../assets/js/select2/select2.full.min.js"></script>
     <script src="../../assets/js/select2/select2-custom.js"></script>
@@ -709,6 +744,7 @@
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
     <script src="../../assets/js/script.js"></script>
+    <script src="../../assets/js/theme-customizer/customizer.js"></script>
     <!-- login js-->
     <!-- Plugin used-->
   </body>
