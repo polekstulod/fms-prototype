@@ -521,14 +521,17 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-6">
-                  <h3>Professional Study</h3>
+                  <h3>Professional Study Details</h3>
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <a href="dashboard.html"> <i data-feather="home"></i></a>
+                      <a href="index.html"> <i data-feather="home"></i></a>
                     </li>
-                    <li class="breadcrumb-item active">Professional Study</li>
+                    <li class="breadcrumb-item">Professional Study</li>
+                    <li class="breadcrumb-item active">
+                      Professional Study Details
+                    </li>
                   </ol>
                 </div>
               </div>
@@ -537,118 +540,122 @@
           <!-- Container-fluid starts-->
           <div class="container-fluid">
             <div class="row">
-              <div class="col-sm-12">
+              <div class="col-xl-12 xl-100">
                 <div class="card">
-                  <div class="card-header">
-                    <div class="d-flex justify-content-between">
-                      <h5>ONGOING ADVANCED / PROFESSIONAL STUDY</h5>
-                      <div class="d-flex justify-content-between">
-                        <button
-                          class="btn btn-success me-3"
-                          type="button"
-                          data-bs-toggle="modal"
-                          data-bs-target="#tooltipmodal">
-                          <i class="fa fa-filter me-3"></i>
-                          Filters
-                        </button>
-                        <div
-                          class="modal fade"
-                          id="tooltipmodal"
-                          tabindex="-1"
-                          role="dialog"
-                          aria-labelledby="tooltipmodal"
-                          aria-hidden="true">
-                          <div
-                            class="modal-dialog modal-dialog-centered"
-                            role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button
-                                  class="btn-close"
-                                  type="button"
-                                  data-bs-dismiss="modal"
-                                  aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                <label>Select Department</label>
-                                <select
-                                  class="js-example-basic-single col-sm-12">
-                                  <option value="1">PUPQC</option>
-                                </select>
-                                <label class="mt-4">Select Date Range</label>
-                                <div class="theme-form">
-                                  <div>
-                                    <input
-                                      class="form-control"
-                                      type="text"
-                                      name="daterange"
-                                      placeholder="Pick a date" />
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="modal-footer">
-                                <button
-                                  class="btn btn-secondary"
-                                  type="button"
-                                  data-bs-dismiss="modal">
-                                  Close
-                                </button>
-                                <button class="btn btn-primary" type="button">
-                                  Submit
-                                </button>
-                              </div>
-                            </div>
-                          </div>
+                  <div class="job-search">
+                    <div class="card-body">
+                      <div class="media">
+                        <img
+                          class="img-40 img-fluid m-r-20"
+                          src="../../assets/images/job-search/1.jpg"
+                          alt="" />
+                        <div class="media-body">
+                          <h6 class="f-w-600 fs-6">
+                            <a href="#">Cecogo, Nieva M</a
+                            ><span class="pull-right">
+                              <button class="btn btn-primary" type="button">
+                                Edit
+                              </button></span
+                            >
+                          </h6>
+                          <p>Faculty</p>
                         </div>
-                        <a
-                          class="btn btn-info"
-                          type="button"
-                          href="add-professional-study.html">
-                          <i class="fa fa-plus me-3"></i>
-                          Add Record
-                        </a>
                       </div>
-                    </div>
-                  </div>
-                  <div class="card-body">
-                    <div class="dt-ext table-responsive">
-                      <table class="display export-button">
-                        <thead>
-                          <tr>
-                            <th>Degree / Program</th>
-                            <th>School Name</th>
-                            <th>Type of Support</th>
-                            <th>Amount</th>
-                            <th>From</th>
-                            <th>To</th>
-                            <th>Status</th>
-                            <th>Action</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>
-                              PhD in Educational Leadership and Management
-                              Program Major in Educational Management
-                            </td>
-                            <td>Pacific Intercontinental College</td>
-                            <td>Self-Funded</td>
-                            <td>17,500 per tri-mester</td>
-                            <td>06/25/2022</td>
-                            <td>Present</td>
-                            <td>On going</td>
-                            <td>
-                              <a class="fs-6 me-2" href="view-study.html">
-                                <i
-                                  class="icofont icofont-eye-alt text-success"></i>
-                              </a>
-                              <a class="fs-6" href="edit-record.html">
-                                <i class="fa fa-pencil text-primary"></i>
-                              </a>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                      <div class="job-description">
+                        <h6>Department</h6>
+                        <p>PUP QC</p>
+                      </div>
+                      <div class="job-description">
+                        <h6>Degree / Program</h6>
+                        <p>
+                          PhD in Educational Leadership and Management Program
+                          Major in Educational Management
+                        </p>
+                      </div>
+
+                      <h5 class="mt-4 bg-light-primary text-dark">School</h5>
+                      <div class="job-description">
+                        <h6>Name</h6>
+                        <p>Pacific Intercontinental College</p>
+                      </div>
+                      <div class="job-description">
+                        <h6>
+                          Program Accreditation Level / World Ranking / COE or
+                          COD
+                        </h6>
+                        <p>Level IV</p>
+                      </div>
+
+                      <h5 class="mt-4 bg-light-primary text-dark">
+                        Means of Educational Support
+                      </h5>
+                      <div class="job-description">
+                        <h6>Type of Support</h6>
+                        <p>Self-Funded</p>
+                      </div>
+                      <div class="job-description">
+                        <h6>Name of Sponsor / Agency / Organization</h6>
+                        <p>Personal</p>
+                      </div>
+                      <div class="job-description">
+                        <h6>Amount</h6>
+                        <p>₱ 17,500 per tri-mester</p>
+                      </div>
+
+                      <h5 class="mt-4 bg-light-primary text-dark">Duration</h5>
+                      <div class="table-responsive">
+                        <table class="table table-styling">
+                          <thead>
+                            <tr>
+                              <th scope="col">From</th>
+                              <th scope="col">To</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>06/25/2022</td>
+                              <td>Present</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <div class="job-description">
+                        <h6>Status</h6>
+                        <p class="badge badge-warning text-uppercase">
+                          On going
+                        </p>
+                      </div>
+
+                      <div class="job-description">
+                        <h6>Number of Units Earned</h6>
+                        <p>9</p>
+                      </div>
+
+                      <div class="job-description">
+                        <h6>Number of Units Currently Enrolled</h6>
+                        <p>9</p>
+                      </div>
+
+                      <div class="job-description mb-3">
+                        <h6>Description of Supporting Documents</h6>
+                        <p>Permit to Study</p>
+                      </div>
+
+                      <embed
+                        src="../../assets/prototype/Permit-to-Study.pdf"
+                        type="application/pdf"
+                        width="100%"
+                        height="600px" />
+
+                      <div class="job-description">
+                        <button class="btn btn-primary" type="button">
+                          <span><i class="fa fa-pencil me-2"></i></span> Edit
+                        </button>
+                        <button class="btn btn-primary" type="button">
+                          <span><i class="fa fa-print me-2"></i></span> Print
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
